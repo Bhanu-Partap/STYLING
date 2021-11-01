@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+.body{
+    background-color: white;
+}
+
+.menu-container{
+    border:1px solid blue;
+    background-color:#5995DA;
+    color:white;
+
+}
+
+.menu{
+    /* border:1px solid red; */
+    display:flex;
+    margin: 10px;
+    justify-content:space-evenly;
+
+}
+
+.menu span{
+    /* border: 1px solid hotpink; */
+}
+
+.menu nav{
+    /* border: 1px solid blueviolet; */
+    display: flex;
+    
+}
+.menu nav ul{
+    display: flex;
+    list-style: none;
+    display: flex;
+    
+}
+
+.menu nav ul li {
+    /* border: 1px dashed orange; */
+    margin-right: 15px;
+    margin-left: 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: white;
+    padding: 8px;
+    transition: all 0.3s ease;
+}
+
+.menu nav ul li:hover {
+    background-color:aliceblue;
+    border-radius: 10px;
+    color: gray;
+}
+
+li::after {
+    content: "♥";
+}
+
+li::before {
+    content: "😘";
+}
+
+.header-container{
+    border: 1px solid tomato;
+    background-color:#D6E9Fe;
+}
+
+.header{
+    display: flex;
+    color: gray;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    
+}
+
+.content-container{
+    color:rgb(61,61,61);
+    /* display: flex;
+    justify-content: center; */
+    position:relative;
+    top:80px;
+    height:482px;
+
+
+}
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.content .item{
+    border:1px solid tomato;
+    display: flex;
+    height: 120px;
+    justify-content:center;
+    align-items: center;
+    width: 380px;
+}
+
+footer{
+
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    color: aqua;
+    background-color:#5995DA;
+    height: 150px;
+    /* align-items:center; */
+}
+footer div{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+
+footer div:nth-child(odd) {
+    color: white;
+    background-color:lightblue;
+    display:flex;
+}
